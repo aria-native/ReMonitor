@@ -23,7 +23,6 @@ class ReMonitor: ObservableObject {
                     state: getState()
                 )
             )
-            print(">  \(action)")
             next(action)
         } } }
     }
