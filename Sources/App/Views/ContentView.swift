@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var monitor: ReMonitor
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        MonitorView(records: $monitor.records)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(monitor: ReMonitor())
     }
 }

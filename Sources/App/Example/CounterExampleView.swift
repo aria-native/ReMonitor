@@ -14,8 +14,13 @@ struct AppState: StateType {
     var counter: Int = 0
 }
 
-struct CounterActionIncrease: Action {}
-struct CounterActionDecrease: Action {}
+struct CounterActionIncrease: Action, CustomStringConvertible {
+    var description: String { "increase" }
+}
+
+struct CounterActionDecrease: Action, CustomStringConvertible {
+    var description: String { "descrease" }
+}
 
 func counterReducer(action: Action, state: AppState?) -> AppState {
     var state = state ?? AppState()
@@ -35,7 +40,7 @@ func counterReducer(action: Action, state: AppState?) -> AppState {
 let mainStore = Store<AppState>(
     reducer: counterReducer,
     state: nil,
-    middleware: [loggingMiddleware]
+    middleware: [ReMonitor.default.monitor()]
 )
 
 // MARK: CounterExampleView
