@@ -12,6 +12,7 @@
 		A32424880B24F8E629168623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 508A05BBAB3FFF7E61BE9CAC /* Assets.xcassets */; };
 		AED2E1CB8378D920BF96EE66 /* CounterExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6DC2083394EB83C2E3DF7 /* CounterExampleView.swift */; };
 		DE2EAB3B6F29E9FF1DCDC05E /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 05183DC239D73A3873860AB8 /* ReSwift */; };
+		DFE7985D9C3C8DC53C6531E0 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCEC2551CEF0874B0FD282E /* Middleware.swift */; };
 		E5F1F01E0E993F43D336EED0 /* ReMonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AF331724F2DF39A2738082 /* ReMonitorApp.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		94B71CDA7283B7CB450FADD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		94E6DC2083394EB83C2E3DF7 /* CounterExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterExampleView.swift; sourceTree = "<group>"; };
 		A8157CD8F6BE4AB019344B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		ECCEC2551CEF0874B0FD282E /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
 		F1E495B7F556AF9CEA5D8928 /* Monitor App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Monitor App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -42,6 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				190C65F961A4FCCF1245779B /* ContentView.swift */,
+				ECCEC2551CEF0874B0FD282E /* Middleware.swift */,
 				14AF331724F2DF39A2738082 /* ReMonitorApp.swift */,
 				5A88C38B11C2C1078C79783E /* Example */,
 				53A0D9BF60BAE8B0E2FA5085 /* Preview Content */,
@@ -206,6 +209,7 @@
 			files = (
 				519A04CBDA5E939E22C0D0CA /* ContentView.swift in Sources */,
 				AED2E1CB8378D920BF96EE66 /* CounterExampleView.swift in Sources */,
+				DFE7985D9C3C8DC53C6531E0 /* Middleware.swift in Sources */,
 				E5F1F01E0E993F43D336EED0 /* ReMonitorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

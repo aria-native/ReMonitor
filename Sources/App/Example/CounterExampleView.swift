@@ -34,7 +34,8 @@ func counterReducer(action: Action, state: AppState?) -> AppState {
 
 let mainStore = Store<AppState>(
     reducer: counterReducer,
-    state: nil
+    state: nil,
+    middleware: [loggingMiddleware]
 )
 
 // MARK: CounterExampleView
