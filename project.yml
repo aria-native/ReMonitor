@@ -1,0 +1,15 @@
+name: ReMonitor
+options:
+  bundleIdPrefix: io.github.knothole.remonitor
+packages:
+  ReSwift:
+    url: https://github.com/ReSwift/ReSwift.git
+    from: 5.0.0
+targets:
+  Monitor App:
+    type: application
+    platform: macOS
+    sources:
+      - Sources/App
+    dependencies:
+      - package: ReSwift
