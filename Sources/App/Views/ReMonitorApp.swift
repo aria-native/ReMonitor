@@ -15,7 +15,7 @@ struct ReMoniterApp: App {
                 .padding(100.0)
         }
         Settings {
-            ContentView(monitor: ReMonitor.default)
+            ReMonitorView(monitor: ReMonitor.default)
         }
     }
 }

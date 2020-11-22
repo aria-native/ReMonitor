@@ -9,11 +9,16 @@ import ReSwift
 import SwiftUI
 
 struct MonitorView: View {
+    @EnvironmentObject var environment: InspectorEnvironment
+
     @Binding var records: [Record]
     var body: some View {
         NavigationView {
             List(records) { record in
-                Text(record.action.monitorString)
+                NavigationLink(
+                    environment.stringfy(action: record.action),
+                    destination: RecordView(record: record)
+                )
             }
         }
     }
@@ -28,5 +33,6 @@ struct MonitorView_Previews: PreviewProvider {
     ]
     static var previews: some View {
         MonitorView(records: $records)
+            .environmentObject(InspectorEnvironment())
     }
 }

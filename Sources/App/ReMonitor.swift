@@ -15,8 +15,14 @@ class ReMonitor: ObservableObject {
     @Published var records = [Record]()
 
     func monitor() -> Middleware<AppState> {
-        { _, _ in { next in { action in
-            self.records.append(Record(date: Date(), action: action))
+        { _, getState in { next in { action in
+            self.records.append(
+                Record(
+                    date: Date(),
+                    action: action,
+                    state: getState()
+                )
+            )
             print(">  \(action)")
             next(action)
         } } }

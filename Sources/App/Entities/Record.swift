@@ -15,4 +15,5 @@ struct Record: Identifiable {
 
     var date: Date
     var action: Action
+    var state: StateType?
 }
