@@ -11,6 +11,10 @@ import SwiftUI
 struct ReMoniterApp: App {
     var body: some Scene {
         WindowGroup {
+            CounterExampleView()
+                .padding(100.0)
+        }
+        Settings {
             ContentView()
         }
     }
