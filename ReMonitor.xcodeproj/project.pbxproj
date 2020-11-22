@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0FF672B3CBFDEAA287AC6503 /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AB2121F5C6CD72FA9FABCF86 /* ReSwift */; };
 		13224BC7F76E68862F5CC0F6 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84DE49C3B12B0BBAB34FF0E /* RecordView.swift */; };
-		13C0B51F256A4B3C00551446 /* ReMonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DEC26CE8BA1375803E9E63 /* ReMonitorApp.swift */; };
 		19031FEA635F31DB23684DAC /* ReMonitor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF7AE206B77C8D724FDBA1 /* ReMonitor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FE984DBFBE7E6EDC287CF0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94B71CDA7283B7CB450FADD1 /* Preview Assets.xcassets */; };
 		321D9EEDB12FC72EDD3271E1 /* ReMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF7AE206B77C8D724FDBA1 /* ReMonitor.framework */; };
@@ -20,6 +19,7 @@
 		799D87470F55C95C3E2288DD /* ReMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA33704AB9864EC113BD9DC6 /* ReMonitor.swift */; };
 		92C7E6821EDC134C6FC0A000 /* MonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4342D4165528C178E43AAB /* MonitorView.swift */; };
 		ADDDFFBC2D4458C446798B1D /* CounterExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F5E10246961506FC6B6DC3 /* CounterExampleView.swift */; };
+		BBBFBB071667F0E24BE500FA /* ReMonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AF331724F2DF39A2738082 /* ReMonitorApp.swift */; };
 		CF31ED1AFFAC4C471DFD29AA /* ActionInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451E354B2B38ACE938BAE50 /* ActionInspector.swift */; };
 		CF56880822156C0336B83809 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946A006429D904F3B460A04 /* Record.swift */; };
 		DDB0FB19533EB56593023C4D /* ReMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = E0D6E5C2955F0D82259E0D0D /* ReMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -52,15 +52,19 @@
 
 /* Begin PBXFileReference section */
 		02EEA87C37D07658B05A161D /* ReMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReMonitor.entitlements; sourceTree = "<group>"; };
+		0B4658382E0EAC5D4A4C22FD /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		14AF331724F2DF39A2738082 /* ReMonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReMonitorApp.swift; sourceTree = "<group>"; };
 		4E4342D4165528C178E43AAB /* MonitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorView.swift; sourceTree = "<group>"; };
 		508A05BBAB3FFF7E61BE9CAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F36EEEFC3213E20C40D56C7 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		7ABF7AE206B77C8D724FDBA1 /* ReMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80561C2808CB0BC4734EA08B /* ReMonitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReMonitorView.swift; sourceTree = "<group>"; };
-		85DEC26CE8BA1375803E9E63 /* ReMonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReMonitorApp.swift; sourceTree = "<group>"; };
+		8263038CDC0CB7EDAA95CDD9 /* project.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = project.yml; sourceTree = "<group>"; };
 		8D190892307FA767B643FEC7 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F5E10246961506FC6B6DC3 /* CounterExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterExampleView.swift; sourceTree = "<group>"; };
 		94B71CDA7283B7CB450FADD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9A148EA61D971F850540628B /* StateInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateInspector.swift; sourceTree = "<group>"; };
+		A16078537E7E192ADA1D0C7D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A8157CD8F6BE4AB019344B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A946A006429D904F3B460A04 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		B3C1FED919645039101474C6 /* InspectorEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorEnvironment.swift; sourceTree = "<group>"; };
@@ -104,8 +108,8 @@
 		15A546018B96484A840E6C8C /* App */ = {
 			isa = PBXGroup;
 			children = (
-				85DEC26CE8BA1375803E9E63 /* ReMonitorApp.swift */,
 				92F5E10246961506FC6B6DC3 /* CounterExampleView.swift */,
+				14AF331724F2DF39A2738082 /* ReMonitorApp.swift */,
 				53A0D9BF60BAE8B0E2FA5085 /* Preview Content */,
 				87A454664C42CE8B3FE2EC03 /* Supporting Files */,
 			);
@@ -116,6 +120,10 @@
 		192844CE722151AD021708C4 = {
 			isa = PBXGroup;
 			children = (
+				6F36EEEFC3213E20C40D56C7 /* .swiftlint.yml */,
+				0B4658382E0EAC5D4A4C22FD /* Package.swift */,
+				8263038CDC0CB7EDAA95CDD9 /* project.yml */,
+				A16078537E7E192ADA1D0C7D /* README.md */,
 				15A546018B96484A840E6C8C /* App */,
 				9051B926D7AEF5F5F250DC3C /* Framework */,
 				BD48F3B909CF61E0262BB214 /* Products */,
@@ -255,6 +263,8 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = C779889A4D1D361ADB0DFEC0 /* Build configuration list for PBXProject "ReMonitor" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -370,7 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADDDFFBC2D4458C446798B1D /* CounterExampleView.swift in Sources */,
-				13C0B51F256A4B3C00551446 /* ReMonitorApp.swift in Sources */,
+				BBBFBB071667F0E24BE500FA /* ReMonitorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

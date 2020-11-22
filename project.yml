@@ -34,3 +34,8 @@ targets:
       - name: Swift Lint
         script: |
           swift run -c release --package-path BuildTools swiftlint --path "$SRCROOT"
+fileGroups:
+  - .swiftlint.yml
+  - Package.swift
+  - README.md
+  - project.yml
