@@ -13,3 +13,10 @@ targets:
       - Sources/App
     dependencies:
       - package: ReSwift
+    preBuildScripts:
+      - name: Swift Format
+        script: |
+          swift run -c release --package-path BuildTools swiftformat "$SRCROOT"
+      - name: Swift Lint
+        script: |
+          swift run -c release --package-path BuildTools swiftlint --path "$SRCROOT"

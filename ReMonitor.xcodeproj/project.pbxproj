@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -81,6 +81,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C45FB56AB5E7F15B94FD0B90 /* Build configuration list for PBXNativeTarget "Monitor App" */;
 			buildPhases = (
+				2B03D043B2B212FBF70E9E01 /* Swift Format */,
+				05CCA491CE62937966207F8D /* Swift Lint */,
 				BC907A62390D64F2DE22146A /* Sources */,
 				253A9113305B55324B5C0BCE /* Resources */,
 				9F98D45CF792A9F7B2B8AC42 /* Frameworks */,
@@ -104,6 +106,8 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = C779889A4D1D361ADB0DFEC0 /* Build configuration list for PBXProject "ReMonitor" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -136,6 +140,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05CCA491CE62937966207F8D /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swift run -c release --package-path BuildTools swiftlint --path \"$SRCROOT\"\n";
+		};
+		2B03D043B2B212FBF70E9E01 /* Swift Format */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Format";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swift run -c release --package-path BuildTools swiftformat \"$SRCROOT\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC907A62390D64F2DE22146A /* Sources */ = {
