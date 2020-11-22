@@ -25,11 +25,13 @@ struct MonitorView: View {
 }
 
 struct MonitorView_Previews: PreviewProvider {
+    struct SampleAction: Action, CustomStringConvertible {
+        var description: String { "action" }
+    }
+
     @State static var records = [
-        Record(date: Date(timeIntervalSince1970: 0), action: CounterActionIncrease()),
-        Record(date: Date(timeIntervalSince1970: 1), action: CounterActionIncrease()),
-        Record(date: Date(timeIntervalSince1970: 2), action: CounterActionDecrease()),
-        Record(date: Date(timeIntervalSince1970: 3), action: CounterActionIncrease()),
+        Record(date: Date(timeIntervalSince1970: 0), action: SampleAction()),
+        Record(date: Date(timeIntervalSince1970: 1), action: SampleAction()),
     ]
     static var previews: some View {
         MonitorView(records: $records)

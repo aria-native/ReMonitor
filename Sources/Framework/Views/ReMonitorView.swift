@@ -7,10 +7,12 @@
 
 import SwiftUI
 
-struct ReMonitorView: View {
+public struct ReMonitorView: View {
     @ObservedObject var monitor = ReMonitor.default
 
-    var body: some View {
+    public init() {}
+
+    public var body: some View {
         MonitorView(records: $monitor.records)
             .environmentObject(InspectorEnvironment())
     }

@@ -5,6 +5,7 @@
 //  https://github.com/ReSwift/ReSwift/issues/424
 //
 
+import ReMonitor
 import ReSwift
 import SwiftUI
 
@@ -40,7 +41,7 @@ func counterReducer(action: Action, state: AppState?) -> AppState {
 let mainStore = Store<AppState>(
     reducer: counterReducer,
     state: nil,
-    middleware: [ReMonitor.default.monitor()]
+    middleware: [ReMonitor.default.middleware()]
 )
 
 // MARK: CounterExampleView

@@ -35,9 +35,17 @@ struct RecordView: View {
 }
 
 struct StateView_Previews: PreviewProvider {
+    struct SampleAction: Action, CustomStringConvertible {
+        var description: String { "action" }
+    }
+
+    struct AppState: StateType, Codable {
+        var counter: Int
+    }
+
     static var record = Record(
         date: Date(),
-        action: CounterActionIncrease(),
+        action: SampleAction(),
         state: AppState(counter: 42)
     )
     static var previews: some View {

@@ -6,11 +6,25 @@ packages:
     url: https://github.com/ReSwift/ReSwift.git
     from: 5.0.0
 targets:
-  Monitor App:
+  TestApp:
     type: application
     platform: macOS
     sources:
       - Sources/App
+    dependencies:
+      - target: ReMonitor
+    preBuildScripts:
+      - name: Swift Format
+        script: |
+          swift run -c release --package-path BuildTools swiftformat "$SRCROOT"
+      - name: Swift Lint
+        script: |
+          swift run -c release --package-path BuildTools swiftlint --path "$SRCROOT"
+  ReMonitor:
+    type: framework
+    platform: macOS
+    sources:
+      - Sources/Framework
     dependencies:
       - package: ReSwift
     preBuildScripts:

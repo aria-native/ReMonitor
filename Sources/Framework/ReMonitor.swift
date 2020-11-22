@@ -9,12 +9,12 @@ import Foundation
 import ReSwift
 import SwiftUI
 
-class ReMonitor: ObservableObject {
-    static let `default` = ReMonitor()
+public class ReMonitor: ObservableObject {
+    public static let `default` = ReMonitor()
 
     @Published var records = [Record]()
 
-    func monitor() -> Middleware<AppState> {
+    public func middleware<T: StateType>() -> Middleware<T> {
         { _, getState in { next in { action in
             self.records.append(
                 Record(

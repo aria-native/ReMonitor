@@ -5,6 +5,7 @@
 //  Created by knothole on 11/22/20.
 //
 
+import ReMonitor
 import SwiftUI
 
 @main
@@ -15,7 +16,7 @@ struct ReMoniterApp: App {
                 .padding(100.0)
         }
         Settings {
-            ReMonitorView(monitor: ReMonitor.default)
+            ReMonitorView()
         }
     }
 }

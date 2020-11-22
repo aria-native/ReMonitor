@@ -8,5 +8,5 @@
 import Foundation
 import ReSwift
 
-typealias MonitorableAction = CustomStringConvertible
-typealias MonitorableState = Encodable
+public typealias MonitorableAction = CustomStringConvertible
+public typealias MonitorableState = Encodable
