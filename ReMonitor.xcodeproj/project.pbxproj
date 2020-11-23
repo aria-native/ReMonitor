@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FF672B3CBFDEAA287AC6503 /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AB2121F5C6CD72FA9FABCF86 /* ReSwift */; };
+		0FF672B3CBFDEAA287AC6503 /* HighlightedTextEditor in Frameworks */ = {isa = PBXBuildFile; productRef = B97E1CF74FE718912881BFCF /* HighlightedTextEditor */; };
 		13224BC7F76E68862F5CC0F6 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84DE49C3B12B0BBAB34FF0E /* RecordView.swift */; };
 		19031FEA635F31DB23684DAC /* ReMonitor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF7AE206B77C8D724FDBA1 /* ReMonitor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FE984DBFBE7E6EDC287CF0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94B71CDA7283B7CB450FADD1 /* Preview Assets.xcassets */; };
 		321D9EEDB12FC72EDD3271E1 /* ReMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF7AE206B77C8D724FDBA1 /* ReMonitor.framework */; };
-		405A9D8E11E31687D2FC191D /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA218AC407C9FC2569600630 /* Types.swift */; };
 		426DC60AB323D6D567A9D93C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 508A05BBAB3FFF7E61BE9CAC /* Assets.xcassets */; };
-		59B94FCABBB3FC076F2C717C /* InspectorEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C1FED919645039101474C6 /* InspectorEnvironment.swift */; };
+		55B0C1003C278CA989F40354 /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AB2121F5C6CD72FA9FABCF86 /* ReSwift */; };
+		6EA9CB3AC26715A921652306 /* MirrorDiffKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1E527C95D0BD17266DFBD01F /* MirrorDiffKit */; };
 		71D104F126C7442F68B9948F /* ReMonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80561C2808CB0BC4734EA08B /* ReMonitorView.swift */; };
 		799D87470F55C95C3E2288DD /* ReMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA33704AB9864EC113BD9DC6 /* ReMonitor.swift */; };
 		92C7E6821EDC134C6FC0A000 /* MonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4342D4165528C178E43AAB /* MonitorView.swift */; };
+		AC2DD2E85E1733A096CB9DCB /* SwiftPrettyPrint in Frameworks */ = {isa = PBXBuildFile; productRef = 89F6803829C905B21090E2EE /* SwiftPrettyPrint */; };
 		ADDDFFBC2D4458C446798B1D /* CounterExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F5E10246961506FC6B6DC3 /* CounterExampleView.swift */; };
 		BBBFBB071667F0E24BE500FA /* ReMonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AF331724F2DF39A2738082 /* ReMonitorApp.swift */; };
+		C6F2195BB83F0268DE54B865 /* DiffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52C1E45C1FFD995277B0183 /* DiffView.swift */; };
 		CF31ED1AFFAC4C471DFD29AA /* ActionInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451E354B2B38ACE938BAE50 /* ActionInspector.swift */; };
 		CF56880822156C0336B83809 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946A006429D904F3B460A04 /* Record.swift */; };
 		DDB0FB19533EB56593023C4D /* ReMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = E0D6E5C2955F0D82259E0D0D /* ReMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -67,13 +69,12 @@
 		A16078537E7E192ADA1D0C7D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A8157CD8F6BE4AB019344B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A946A006429D904F3B460A04 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
-		B3C1FED919645039101474C6 /* InspectorEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorEnvironment.swift; sourceTree = "<group>"; };
 		BA33704AB9864EC113BD9DC6 /* ReMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReMonitor.swift; sourceTree = "<group>"; };
 		D451E354B2B38ACE938BAE50 /* ActionInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionInspector.swift; sourceTree = "<group>"; };
+		D52C1E45C1FFD995277B0183 /* DiffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffView.swift; sourceTree = "<group>"; };
 		E0D6E5C2955F0D82259E0D0D /* ReMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReMonitor.h; sourceTree = "<group>"; };
 		E83F212C7A3A1BB6F1204852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E84DE49C3B12B0BBAB34FF0E /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
-		FA218AC407C9FC2569600630 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +82,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FF672B3CBFDEAA287AC6503 /* ReSwift in Frameworks */,
+				0FF672B3CBFDEAA287AC6503 /* HighlightedTextEditor in Frameworks */,
+				6EA9CB3AC26715A921652306 /* MirrorDiffKit in Frameworks */,
+				55B0C1003C278CA989F40354 /* ReSwift in Frameworks */,
+				AC2DD2E85E1733A096CB9DCB /* SwiftPrettyPrint in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				A946A006429D904F3B460A04 /* Record.swift */,
-				FA218AC407C9FC2569600630 /* Types.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -151,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				D451E354B2B38ACE938BAE50 /* ActionInspector.swift */,
-				B3C1FED919645039101474C6 /* InspectorEnvironment.swift */,
 				9A148EA61D971F850540628B /* StateInspector.swift */,
 			);
 			path = Inspector;
@@ -183,6 +185,7 @@
 		9DF5C647B61F01E0F6CEB01E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D52C1E45C1FFD995277B0183 /* DiffView.swift */,
 				4E4342D4165528C178E43AAB /* MonitorView.swift */,
 				E84DE49C3B12B0BBAB34FF0E /* RecordView.swift */,
 				80561C2808CB0BC4734EA08B /* ReMonitorView.swift */,
@@ -229,7 +232,10 @@
 			);
 			name = ReMonitor;
 			packageProductDependencies = (
+				B97E1CF74FE718912881BFCF /* HighlightedTextEditor */,
+				1E527C95D0BD17266DFBD01F /* MirrorDiffKit */,
 				AB2121F5C6CD72FA9FABCF86 /* ReSwift */,
+				89F6803829C905B21090E2EE /* SwiftPrettyPrint */,
 			);
 			productName = ReMonitor;
 			productReference = 7ABF7AE206B77C8D724FDBA1 /* ReMonitor.framework */;
@@ -276,7 +282,10 @@
 			);
 			mainGroup = 192844CE722151AD021708C4;
 			packageReferences = (
+				6833B374833EEEFE07A9AA87 /* XCRemoteSwiftPackageReference "HighlightedTextEditor" */,
+				6CFBA5FAE1ED2A6261FB19A3 /* XCRemoteSwiftPackageReference "MirrorDiffKit" */,
 				1FCA01DFA9894B2883B3C022 /* XCRemoteSwiftPackageReference "ReSwift" */,
+				A8DCE366ABF20D5A43C3855F /* XCRemoteSwiftPackageReference "SwiftPrettyPrint" */,
 			);
 			projectDirPath = "";
 			projectRoot = "";
@@ -389,14 +398,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF31ED1AFFAC4C471DFD29AA /* ActionInspector.swift in Sources */,
-				59B94FCABBB3FC076F2C717C /* InspectorEnvironment.swift in Sources */,
+				C6F2195BB83F0268DE54B865 /* DiffView.swift in Sources */,
 				92C7E6821EDC134C6FC0A000 /* MonitorView.swift in Sources */,
 				799D87470F55C95C3E2288DD /* ReMonitor.swift in Sources */,
 				71D104F126C7442F68B9948F /* ReMonitorView.swift in Sources */,
 				CF56880822156C0336B83809 /* Record.swift in Sources */,
 				13224BC7F76E68862F5CC0F6 /* RecordView.swift in Sources */,
 				FDFAC8D775F1813878DF1710 /* StateInspector.swift in Sources */,
-				405A9D8E11E31687D2FC191D /* Types.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,13 +653,52 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		6833B374833EEEFE07A9AA87 /* XCRemoteSwiftPackageReference "HighlightedTextEditor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kyle-n/HighlightedTextEditor.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.1;
+			};
+		};
+		6CFBA5FAE1ED2A6261FB19A3 /* XCRemoteSwiftPackageReference "MirrorDiffKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kuniwak/MirrorDiffKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		A8DCE366ABF20D5A43C3855F /* XCRemoteSwiftPackageReference "SwiftPrettyPrint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/YusukeHosonuma/SwiftPrettyPrint.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1E527C95D0BD17266DFBD01F /* MirrorDiffKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CFBA5FAE1ED2A6261FB19A3 /* XCRemoteSwiftPackageReference "MirrorDiffKit" */;
+			productName = MirrorDiffKit;
+		};
+		89F6803829C905B21090E2EE /* SwiftPrettyPrint */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8DCE366ABF20D5A43C3855F /* XCRemoteSwiftPackageReference "SwiftPrettyPrint" */;
+			productName = SwiftPrettyPrint;
+		};
 		AB2121F5C6CD72FA9FABCF86 /* ReSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1FCA01DFA9894B2883B3C022 /* XCRemoteSwiftPackageReference "ReSwift" */;
 			productName = ReSwift;
+		};
+		B97E1CF74FE718912881BFCF /* HighlightedTextEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6833B374833EEEFE07A9AA87 /* XCRemoteSwiftPackageReference "HighlightedTextEditor" */;
+			productName = HighlightedTextEditor;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

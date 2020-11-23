@@ -14,7 +14,6 @@ public struct ReMonitorView: View {
 
     public var body: some View {
         MonitorView(records: $monitor.records)
-            .environmentObject(InspectorEnvironment())
     }
 }
 

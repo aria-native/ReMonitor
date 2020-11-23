@@ -5,11 +5,9 @@
 //  Created by knothole on 11/22/20.
 //
 
-import ReSwift
 import SwiftUI
 
 struct RecordView: View {
-    @EnvironmentObject var environment: InspectorEnvironment
     var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
         formatter.dateStyle = .short
@@ -17,39 +15,47 @@ struct RecordView: View {
         return formatter
     }
 
-    var record: Record
+    var record: ReMonitorRecord
+    @State var selectedIndex = 0
+
     var body: some View {
-        GeometryReader { _ in
-            Form {
-                Section(header: Text("Action").foregroundColor(.secondary)) {
-                    Text(environment.stringfy(action: record.action))
-                    Text(dateFormatter.string(from: record.date))
+        Form {
+            Section(header: Text("Action").foregroundColor(.secondary)) {
+                Text(record.action.description)
+                Text(dateFormatter.string(from: record.date))
+            }
+            Spacer().frame(height: 20)
+            Section(header: Text("State").foregroundColor(.secondary)) {
+                Picker("", selection: self.$selectedIndex) {
+                    Text("diff").tag(0)
+                    Text("full").tag(1)
                 }
-                Spacer().frame(height: 20)
-                Section(header: Text("State").foregroundColor(.secondary)) {
-                    Text(environment.stringfy(state: record.state))
+                .pickerStyle(SegmentedPickerStyle())
+
+                if selectedIndex == 0 {
+                    DiffView(content: .constant(record.state.diff))
+                } else {
+                    ScrollView {
+                        Text(record.state.state ?? "nil")
+                            .font(Font.system(.body, design: .monospaced))
+                    }
                 }
-            }.padding(20)
-        }
+            }
+        }.padding(10)
     }
 }
 
 struct StateView_Previews: PreviewProvider {
-    struct SampleAction: Action, CustomStringConvertible {
-        var description: String { "action" }
-    }
-
-    struct AppState: StateType, Codable {
-        var counter: Int
-    }
-
-    static var record = Record(
+    static var record = ReMonitorRecord(
         date: Date(),
-        action: SampleAction(),
-        state: AppState(counter: 42)
+        action: ReMonitorRecord.Action(summary: "inc", description: "increment(0)"),
+        state: ReMonitorRecord.State(state: "{ value: 42 }", diff: "+ { value: 42 }\n- { value: 41 }")
     )
+
     static var previews: some View {
-        RecordView(record: record)
-            .environmentObject(InspectorEnvironment())
+        Group {
+            RecordView(record: record)
+            RecordView(record: record, selectedIndex: 1)
+        }
     }
 }

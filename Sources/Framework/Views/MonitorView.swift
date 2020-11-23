@@ -9,15 +9,15 @@ import ReSwift
 import SwiftUI
 
 struct MonitorView: View {
-    @EnvironmentObject var environment: InspectorEnvironment
-
-    @Binding var records: [Record]
+    @Binding var records: [ReMonitorRecord]
     var body: some View {
         NavigationView {
             List(records) { record in
                 NavigationLink(
-                    environment.stringfy(action: record.action),
-                    destination: RecordView(record: record)
+                    record.action.summary,
+                    destination: RecordView(
+                        record: record
+                    )
                 )
             }
         }
@@ -25,16 +25,19 @@ struct MonitorView: View {
 }
 
 struct MonitorView_Previews: PreviewProvider {
-    struct SampleAction: Action, CustomStringConvertible {
-        var description: String { "action" }
-    }
-
     @State static var records = [
-        Record(date: Date(timeIntervalSince1970: 0), action: SampleAction()),
-        Record(date: Date(timeIntervalSince1970: 1), action: SampleAction()),
+        ReMonitorRecord(
+            date: Date(),
+            action: ReMonitorRecord.Action(summary: "inc", description: "increment(0)"),
+            state: ReMonitorRecord.State(state: "{ value: 42 }", diff: "+ { value: 42 }\n- { value: 41 }")
+        ),
+        ReMonitorRecord(
+            date: Date(),
+            action: ReMonitorRecord.Action(summary: "dec", description: "increment(0)"),
+            state: ReMonitorRecord.State(state: "{ value: 41 }", diff: "+ { value: 41 }\n- { value: 42 }")
+        ),
     ]
     static var previews: some View {
         MonitorView(records: $records)
-            .environmentObject(InspectorEnvironment())
     }
 }

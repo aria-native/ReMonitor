@@ -5,6 +5,15 @@ packages:
   ReSwift:
     url: https://github.com/ReSwift/ReSwift.git
     from: 5.0.0
+  MirrorDiffKit:
+    url: https://github.com/Kuniwak/MirrorDiffKit.git
+    from: 5.0.1
+  HighlightedTextEditor:
+    url: https://github.com/kyle-n/HighlightedTextEditor.git
+    from: 1.5.1
+  SwiftPrettyPrint:
+    url: https://github.com/YusukeHosonuma/SwiftPrettyPrint.git
+    from: 1.0.0
 targets:
   TestApp:
     type: application
@@ -26,7 +35,10 @@ targets:
     sources:
       - Sources/Framework
     dependencies:
+      - package: HighlightedTextEditor
+      - package: MirrorDiffKit
       - package: ReSwift
+      - package: SwiftPrettyPrint
     preBuildScripts:
       - name: Swift Format
         script: |

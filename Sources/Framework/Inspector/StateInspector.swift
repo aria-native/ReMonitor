@@ -5,35 +5,26 @@
 //  Created by knothole on 11/22/20.
 //
 
-import Foundation
+import MirrorDiffKit
 import ReSwift
+import SwiftPrettyPrint
 
-extension MonitorableState {
-    func encode(with encoder: JSONEncoder) throws -> String? {
-        let data = try encoder.encode(self)
-        return String(data: data, encoding: .utf8)
-    }
-}
-
-class StateInspector {
-    let encoder: JSONEncoder
-    init() {
-        encoder = JSONEncoder()
-        encoder.outputFormatting = .prettyPrinted
-    }
-
-    func stringfy(_ state: StateType?) -> String {
+enum StateInspector {
+    static func record(_ state: StateType?, previous: StateType?) -> ReMonitorRecord.State {
         guard let state = state else {
-            return "(nil)"
+            return ReMonitorRecord.State(state: nil, diff: nil)
         }
-        guard let monitorableState = state as? MonitorableState else {
-            return "(unknown)"
+        var stateDescription = ""
+        dump(state, to: &stateDescription)
+
+        var stateDiff: String?
+
+        if let previous = previous {
+            stateDiff = diff(between: previous, and: state)
+        } else {
+            stateDiff = nil
         }
 
-        do {
-            return try monitorableState.encode(with: encoder) ?? "()"
-        } catch {
-            return error.localizedDescription
-        }
+        return ReMonitorRecord.State(state: stateDescription, diff: stateDiff)
     }
 }

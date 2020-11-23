@@ -11,17 +11,15 @@ import SwiftUI
 
 // MARK: ReSwift Example Setup
 
-struct AppState: StateType, MonitorableState {
+struct AppState: StateType {
     var counter: Int = 0
 }
 
-struct CounterActionIncrease: Action, MonitorableAction {
+struct CounterActionIncrease: Action, CustomStringConvertible {
     var description: String { "increase" }
 }
 
-struct CounterActionDecrease: Action, MonitorableAction {
-    var description: String { "descrease" }
-}
+struct CounterActionDecrease: Action {}
 
 func counterReducer(action: Action, state: AppState?) -> AppState {
     var state = state ?? AppState()

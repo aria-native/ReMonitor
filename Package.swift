@@ -1,5 +1,4 @@
 // swift-tools-version:5.3
-// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
@@ -15,12 +14,20 @@ let package = Package(
         ),
     ],
     dependencies: [
+        .package(url: "https://github.com/Kuniwak/MirrorDiffKit.git", .upToNextMajor(from: "5.0.1")),
         .package(url: "https://github.com/ReSwift/ReSwift.git", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://github.com/YusukeHosonuma/SwiftPrettyPrint.git", .upToNextMajor(from: "1.0.0")),
+        .package(url: "https://github.com/kyle-n/HighlightedTextEditor.git", .upToNextMajor(from: "1.5.1")),
     ],
     targets: [
         .target(
             name: "ReMonitor",
-            dependencies: ["ReSwift"],
+            dependencies: [
+                "HighlightedTextEditor",
+                "MirrorDiffKit",
+                "ReSwift",
+                "SwiftPrettyPrint",
+            ],
             path: "Sources/Framework"
         ),
     ]

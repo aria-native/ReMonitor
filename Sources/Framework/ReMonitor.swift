@@ -12,18 +12,24 @@ import SwiftUI
 public class ReMonitor: ObservableObject {
     public static let `default` = ReMonitor()
 
-    @Published var records = [Record]()
+    @Published public var records = [ReMonitorRecord]()
+
+    public func reset() {
+        records.removeAll()
+    }
 
     public func middleware<T: StateType>() -> Middleware<T> {
         { _, getState in { next in { action in
-            self.records.append(
-                Record(
-                    date: Date(),
-                    action: action,
-                    state: getState()
-                )
-            )
+            let previousState = getState()
             next(action)
+            let state = getState()
+
+            let record = ReMonitorRecord(
+                date: Date(),
+                action: ActionInspector.record(action),
+                state: StateInspector.record(state, previous: previousState)
+            )
+            self.records.append(record)
         } } }
     }
 }
