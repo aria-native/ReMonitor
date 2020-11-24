@@ -7,34 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FF672B3CBFDEAA287AC6503 /* HighlightedTextEditor in Frameworks */ = {isa = PBXBuildFile; productRef = B97E1CF74FE718912881BFCF /* HighlightedTextEditor */; };
-		13224BC7F76E68862F5CC0F6 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84DE49C3B12B0BBAB34FF0E /* RecordView.swift */; };
-		19031FEA635F31DB23684DAC /* ReMonitor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF7AE206B77C8D724FDBA1 /* ReMonitor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0B8638F6464790EEB71C2C28 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84DE49C3B12B0BBAB34FF0E /* RecordView.swift */; };
+		16319F13D13A519008509975 /* ReMonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80561C2808CB0BC4734EA08B /* ReMonitorView.swift */; };
+		1F4C5EB8BAB6E88AD64A1960 /* SwiftPrettyPrint in Frameworks */ = {isa = PBXBuildFile; productRef = 8B2C82B9C090A943E7C14C58 /* SwiftPrettyPrint */; };
+		2FE15CB81197AE63449FBB5A /* ReMonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80561C2808CB0BC4734EA08B /* ReMonitorView.swift */; };
 		2FE984DBFBE7E6EDC287CF0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94B71CDA7283B7CB450FADD1 /* Preview Assets.xcassets */; };
-		321D9EEDB12FC72EDD3271E1 /* ReMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF7AE206B77C8D724FDBA1 /* ReMonitor.framework */; };
+		3451DE256828BB8C9A1E36CD /* ReMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA33704AB9864EC113BD9DC6 /* ReMonitor.swift */; };
+		3A30A0143CF5C878028375BA /* HighlightedTextEditor in Frameworks */ = {isa = PBXBuildFile; productRef = AC7D362E5203E934CC5F3992 /* HighlightedTextEditor */; };
+		3A7A23BDA16A8A28A50CDD1F /* ReMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569F037EFA47AAB8BD4404EF /* ReMonitor.framework */; };
 		426DC60AB323D6D567A9D93C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 508A05BBAB3FFF7E61BE9CAC /* Assets.xcassets */; };
-		55B0C1003C278CA989F40354 /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AB2121F5C6CD72FA9FABCF86 /* ReSwift */; };
-		6EA9CB3AC26715A921652306 /* MirrorDiffKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1E527C95D0BD17266DFBD01F /* MirrorDiffKit */; };
-		71D104F126C7442F68B9948F /* ReMonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80561C2808CB0BC4734EA08B /* ReMonitorView.swift */; };
-		799D87470F55C95C3E2288DD /* ReMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA33704AB9864EC113BD9DC6 /* ReMonitor.swift */; };
-		92C7E6821EDC134C6FC0A000 /* MonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4342D4165528C178E43AAB /* MonitorView.swift */; };
-		AC2DD2E85E1733A096CB9DCB /* SwiftPrettyPrint in Frameworks */ = {isa = PBXBuildFile; productRef = 89F6803829C905B21090E2EE /* SwiftPrettyPrint */; };
+		435DC516ED67F8FF4F0A48BC /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9CD4300CDE8FA5C3D6F199C1 /* ReSwift */; };
+		44F1C9C615CD12524E349D4B /* HighlightedTextEditor in Frameworks */ = {isa = PBXBuildFile; productRef = 3F2566FCC95BE3A6F4791F64 /* HighlightedTextEditor */; };
+		4FCFDFE483A68F1F729C013A /* MirrorDiffKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6334F10AE5C150000F8B0392 /* MirrorDiffKit */; };
+		5F943E3FABF6F51B885BBE67 /* ReMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA33704AB9864EC113BD9DC6 /* ReMonitor.swift */; };
+		744759BB0CB737BFD9FFD687 /* MirrorDiffKit in Frameworks */ = {isa = PBXBuildFile; productRef = 25051BFB3D904497C95FC7BE /* MirrorDiffKit */; };
+		78AC211C15D888D450B48E4C /* DiffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52C1E45C1FFD995277B0183 /* DiffView.swift */; };
+		925B30B0BBDE2251AE8E10F7 /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 95D4E710440BAB2E1961EDBF /* ReSwift */; };
+		92A0A079EC82DA089A2B4CCD /* StateInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A148EA61D971F850540628B /* StateInspector.swift */; };
+		970121EB9F545339C9E91A31 /* ReMonitor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 569F037EFA47AAB8BD4404EF /* ReMonitor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		987D1DD5F77E6D272A8313A1 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84DE49C3B12B0BBAB34FF0E /* RecordView.swift */; };
+		9ADA4E946824E98DD915CC3F /* ActionInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451E354B2B38ACE938BAE50 /* ActionInspector.swift */; };
+		A7D7E4652CB78B1E70C26681 /* StateInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A148EA61D971F850540628B /* StateInspector.swift */; };
 		ADDDFFBC2D4458C446798B1D /* CounterExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F5E10246961506FC6B6DC3 /* CounterExampleView.swift */; };
+		AE2248AA6A0C8EF69102E045 /* MonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4342D4165528C178E43AAB /* MonitorView.swift */; };
+		B4BC7B7C53DB81E51C9C4616 /* ReMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = E0D6E5C2955F0D82259E0D0D /* ReMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1A3923F1CA994E7214D179 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946A006429D904F3B460A04 /* Record.swift */; };
 		BBBFBB071667F0E24BE500FA /* ReMonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AF331724F2DF39A2738082 /* ReMonitorApp.swift */; };
-		C6F2195BB83F0268DE54B865 /* DiffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52C1E45C1FFD995277B0183 /* DiffView.swift */; };
-		CF31ED1AFFAC4C471DFD29AA /* ActionInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451E354B2B38ACE938BAE50 /* ActionInspector.swift */; };
-		CF56880822156C0336B83809 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946A006429D904F3B460A04 /* Record.swift */; };
-		DDB0FB19533EB56593023C4D /* ReMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = E0D6E5C2955F0D82259E0D0D /* ReMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FDFAC8D775F1813878DF1710 /* StateInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A148EA61D971F850540628B /* StateInspector.swift */; };
+		BF25A6F6787FE01FD9B04CD3 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946A006429D904F3B460A04 /* Record.swift */; };
+		C4543380277EB234E94016AA /* ActionInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D451E354B2B38ACE938BAE50 /* ActionInspector.swift */; };
+		E87186A21A4DF764CFE685E3 /* MonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4342D4165528C178E43AAB /* MonitorView.swift */; };
+		F1B475315DC93AD67906AB6B /* ReMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = E0D6E5C2955F0D82259E0D0D /* ReMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1B6B90C68A84B9AC20FFBD6 /* SwiftPrettyPrint in Frameworks */ = {isa = PBXBuildFile; productRef = C61CFA02F5619267CF83C6EA /* SwiftPrettyPrint */; };
+		FF4A9E7FA8C9D56BBD623A5F /* DiffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52C1E45C1FFD995277B0183 /* DiffView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9A8F2CDA94831561882D1869 /* PBXContainerItemProxy */ = {
+		ADB0E09BE19B873FF90A7852 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 13C9CA09D54B722FA99257D2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4FF52A75563CE3A4C6366D85;
-			remoteInfo = ReMonitor;
+			remoteGlobalIDString = CD21EF58FDA89A48B7606BF5;
+			remoteInfo = ReMonitor_macOS;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -45,7 +58,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				19031FEA635F31DB23684DAC /* ReMonitor.framework in Embed Frameworks */,
+				970121EB9F545339C9E91A31 /* ReMonitor.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,8 +71,9 @@
 		14AF331724F2DF39A2738082 /* ReMonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReMonitorApp.swift; sourceTree = "<group>"; };
 		4E4342D4165528C178E43AAB /* MonitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorView.swift; sourceTree = "<group>"; };
 		508A05BBAB3FFF7E61BE9CAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		569F037EFA47AAB8BD4404EF /* ReMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F36EEEFC3213E20C40D56C7 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
-		7ABF7AE206B77C8D724FDBA1 /* ReMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FF67CFEC1680C608A479BDE /* ReMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80561C2808CB0BC4734EA08B /* ReMonitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReMonitorView.swift; sourceTree = "<group>"; };
 		8263038CDC0CB7EDAA95CDD9 /* project.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = project.yml; sourceTree = "<group>"; };
 		8D190892307FA767B643FEC7 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,14 +92,25 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8B28CF1121845920AA6DE1D0 /* Frameworks */ = {
+		54E40A10ED5B9AC50C24207C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FF672B3CBFDEAA287AC6503 /* HighlightedTextEditor in Frameworks */,
-				6EA9CB3AC26715A921652306 /* MirrorDiffKit in Frameworks */,
-				55B0C1003C278CA989F40354 /* ReSwift in Frameworks */,
-				AC2DD2E85E1733A096CB9DCB /* SwiftPrettyPrint in Frameworks */,
+				3A30A0143CF5C878028375BA /* HighlightedTextEditor in Frameworks */,
+				4FCFDFE483A68F1F729C013A /* MirrorDiffKit in Frameworks */,
+				435DC516ED67F8FF4F0A48BC /* ReSwift in Frameworks */,
+				1F4C5EB8BAB6E88AD64A1960 /* SwiftPrettyPrint in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEE30AF645ABCCE00DCD747A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F1C9C615CD12524E349D4B /* HighlightedTextEditor in Frameworks */,
+				744759BB0CB737BFD9FFD687 /* MirrorDiffKit in Frameworks */,
+				925B30B0BBDE2251AE8E10F7 /* ReSwift in Frameworks */,
+				F1B6B90C68A84B9AC20FFBD6 /* SwiftPrettyPrint in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				321D9EEDB12FC72EDD3271E1 /* ReMonitor.framework in Frameworks */,
+				3A7A23BDA16A8A28A50CDD1F /* ReMonitor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +221,8 @@
 		BD48F3B909CF61E0262BB214 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7ABF7AE206B77C8D724FDBA1 /* ReMonitor.framework */,
+				6FF67CFEC1680C608A479BDE /* ReMonitor.framework */,
+				569F037EFA47AAB8BD4404EF /* ReMonitor.framework */,
 				8D190892307FA767B643FEC7 /* TestApp.app */,
 			);
 			name = Products;
@@ -205,42 +231,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		96B8D85BA0F7627E554B04B4 /* Headers */ = {
+		8005148C24B1D8FAECD3557D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDB0FB19533EB56593023C4D /* ReMonitor.h in Headers */,
+				F1B475315DC93AD67906AB6B /* ReMonitor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB91FF751F35396C7A04FFA1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4BC7B7C53DB81E51C9C4616 /* ReMonitor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4FF52A75563CE3A4C6366D85 /* ReMonitor */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C97E93A8212258D049264FF3 /* Build configuration list for PBXNativeTarget "ReMonitor" */;
-			buildPhases = (
-				01B8DA9212D4B99BDA16BA01 /* Swift Format */,
-				7D3E5CA34C0E2392581E6FBF /* Swift Lint */,
-				96B8D85BA0F7627E554B04B4 /* Headers */,
-				F16477D61D8B61142E96872A /* Sources */,
-				8B28CF1121845920AA6DE1D0 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ReMonitor;
-			packageProductDependencies = (
-				B97E1CF74FE718912881BFCF /* HighlightedTextEditor */,
-				1E527C95D0BD17266DFBD01F /* MirrorDiffKit */,
-				AB2121F5C6CD72FA9FABCF86 /* ReSwift */,
-				89F6803829C905B21090E2EE /* SwiftPrettyPrint */,
-			);
-			productName = ReMonitor;
-			productReference = 7ABF7AE206B77C8D724FDBA1 /* ReMonitor.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		A189B14E6E72D17843AA29EF /* TestApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF602577997246D08F0B0786 /* Build configuration list for PBXNativeTarget "TestApp" */;
@@ -255,12 +264,62 @@
 			buildRules = (
 			);
 			dependencies = (
-				D6C646C27FBDC601593C4714 /* PBXTargetDependency */,
+				558181FF6126D30AAD05F4F0 /* PBXTargetDependency */,
 			);
 			name = TestApp;
 			productName = TestApp;
 			productReference = 8D190892307FA767B643FEC7 /* TestApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CD21EF58FDA89A48B7606BF5 /* ReMonitor_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3126726D385388C8BE70F2C9 /* Build configuration list for PBXNativeTarget "ReMonitor_macOS" */;
+			buildPhases = (
+				C4C61916CF247309EEB09E19 /* Swift Format */,
+				E49BE26AA049833094CA0DF9 /* Swift Lint */,
+				8005148C24B1D8FAECD3557D /* Headers */,
+				7FAC48A2CCD127B657FDF45C /* Sources */,
+				AEE30AF645ABCCE00DCD747A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReMonitor_macOS;
+			packageProductDependencies = (
+				3F2566FCC95BE3A6F4791F64 /* HighlightedTextEditor */,
+				25051BFB3D904497C95FC7BE /* MirrorDiffKit */,
+				95D4E710440BAB2E1961EDBF /* ReSwift */,
+				C61CFA02F5619267CF83C6EA /* SwiftPrettyPrint */,
+			);
+			productName = ReMonitor_macOS;
+			productReference = 569F037EFA47AAB8BD4404EF /* ReMonitor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ED7B49B32D7B25E474D50C1B /* ReMonitor_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11DAB671DF0BC00AFC0A166D /* Build configuration list for PBXNativeTarget "ReMonitor_iOS" */;
+			buildPhases = (
+				257EB089E22CF592F8C0638D /* Swift Format */,
+				D18A73E86C5F0B6EA1E01167 /* Swift Lint */,
+				DB91FF751F35396C7A04FFA1 /* Headers */,
+				3F48D8073A5E5B7A33625C80 /* Sources */,
+				54E40A10ED5B9AC50C24207C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReMonitor_iOS;
+			packageProductDependencies = (
+				AC7D362E5203E934CC5F3992 /* HighlightedTextEditor */,
+				6334F10AE5C150000F8B0392 /* MirrorDiffKit */,
+				9CD4300CDE8FA5C3D6F199C1 /* ReSwift */,
+				8B2C82B9C090A943E7C14C58 /* SwiftPrettyPrint */,
+			);
+			productName = ReMonitor_iOS;
+			productReference = 6FF67CFEC1680C608A479BDE /* ReMonitor.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -290,7 +349,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4FF52A75563CE3A4C6366D85 /* ReMonitor */,
+				ED7B49B32D7B25E474D50C1B /* ReMonitor_iOS */,
+				CD21EF58FDA89A48B7606BF5 /* ReMonitor_macOS */,
 				A189B14E6E72D17843AA29EF /* TestApp */,
 			);
 		};
@@ -309,7 +369,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01B8DA9212D4B99BDA16BA01 /* Swift Format */ = {
+		257EB089E22CF592F8C0638D /* Swift Format */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -345,7 +405,25 @@
 			shellPath = /bin/sh;
 			shellScript = "swift run -c release --package-path BuildTools swiftformat \"$SRCROOT\"\n";
 		};
-		7D3E5CA34C0E2392581E6FBF /* Swift Lint */ = {
+		C4C61916CF247309EEB09E19 /* Swift Format */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Format";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swift run -c release --package-path BuildTools swiftformat \"$SRCROOT\"\n";
+		};
+		CA2459B4E2F1F411715F1927 /* Swift Lint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -363,7 +441,25 @@
 			shellPath = /bin/sh;
 			shellScript = "swift run -c release --package-path BuildTools swiftlint --path \"$SRCROOT\"\n";
 		};
-		CA2459B4E2F1F411715F1927 /* Swift Lint */ = {
+		D18A73E86C5F0B6EA1E01167 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swift run -c release --package-path BuildTools swiftlint --path \"$SRCROOT\"\n";
+		};
+		E49BE26AA049833094CA0DF9 /* Swift Lint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -393,28 +489,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F16477D61D8B61142E96872A /* Sources */ = {
+		3F48D8073A5E5B7A33625C80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF31ED1AFFAC4C471DFD29AA /* ActionInspector.swift in Sources */,
-				C6F2195BB83F0268DE54B865 /* DiffView.swift in Sources */,
-				92C7E6821EDC134C6FC0A000 /* MonitorView.swift in Sources */,
-				799D87470F55C95C3E2288DD /* ReMonitor.swift in Sources */,
-				71D104F126C7442F68B9948F /* ReMonitorView.swift in Sources */,
-				CF56880822156C0336B83809 /* Record.swift in Sources */,
-				13224BC7F76E68862F5CC0F6 /* RecordView.swift in Sources */,
-				FDFAC8D775F1813878DF1710 /* StateInspector.swift in Sources */,
+				9ADA4E946824E98DD915CC3F /* ActionInspector.swift in Sources */,
+				FF4A9E7FA8C9D56BBD623A5F /* DiffView.swift in Sources */,
+				E87186A21A4DF764CFE685E3 /* MonitorView.swift in Sources */,
+				3451DE256828BB8C9A1E36CD /* ReMonitor.swift in Sources */,
+				16319F13D13A519008509975 /* ReMonitorView.swift in Sources */,
+				BA1A3923F1CA994E7214D179 /* Record.swift in Sources */,
+				0B8638F6464790EEB71C2C28 /* RecordView.swift in Sources */,
+				92A0A079EC82DA089A2B4CCD /* StateInspector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FAC48A2CCD127B657FDF45C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4543380277EB234E94016AA /* ActionInspector.swift in Sources */,
+				78AC211C15D888D450B48E4C /* DiffView.swift in Sources */,
+				AE2248AA6A0C8EF69102E045 /* MonitorView.swift in Sources */,
+				5F943E3FABF6F51B885BBE67 /* ReMonitor.swift in Sources */,
+				2FE15CB81197AE63449FBB5A /* ReMonitorView.swift in Sources */,
+				BF25A6F6787FE01FD9B04CD3 /* Record.swift in Sources */,
+				987D1DD5F77E6D272A8313A1 /* RecordView.swift in Sources */,
+				A7D7E4652CB78B1E70C26681 /* StateInspector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D6C646C27FBDC601593C4714 /* PBXTargetDependency */ = {
+		558181FF6126D30AAD05F4F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4FF52A75563CE3A4C6366D85 /* ReMonitor */;
-			targetProxy = 9A8F2CDA94831561882D1869 /* PBXContainerItemProxy */;
+			target = CD21EF58FDA89A48B7606BF5 /* ReMonitor_macOS */;
+			targetProxy = ADB0E09BE19B873FF90A7852 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -474,14 +585,61 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		4124D2BF7D35358AC94AB85B /* Release */ = {
+		5F1BD47A296B6975E5CCC8A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Sources/Framework/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.knothole.remonitor.ReMonitor-iOS";
+				PRODUCT_NAME = ReMonitor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		69FD93F9042EB0C59E08673A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Sources/Framework/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.knothole.remonitor.ReMonitor-iOS";
+				PRODUCT_NAME = ReMonitor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		9B4C4B323AA96C79F88CBAB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -497,7 +655,34 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.knothole.remonitor.ReMonitor;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.knothole.remonitor.ReMonitor-macOS";
+				PRODUCT_NAME = ReMonitor;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		A97B629A02DED5602D5092CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Sources/Framework/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.knothole.remonitor.ReMonitor-macOS";
+				PRODUCT_NAME = ReMonitor;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -531,29 +716,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.knothole.remonitor.TestApp;
 				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		E1571473ADB5D0671EC225FE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Sources/Framework/Supporting Files/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.knothole.remonitor.ReMonitor;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -605,7 +767,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
@@ -615,20 +776,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		11DAB671DF0BC00AFC0A166D /* Build configuration list for PBXNativeTarget "ReMonitor_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F1BD47A296B6975E5CCC8A5 /* Debug */,
+				69FD93F9042EB0C59E08673A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3126726D385388C8BE70F2C9 /* Build configuration list for PBXNativeTarget "ReMonitor_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B4C4B323AA96C79F88CBAB4 /* Debug */,
+				A97B629A02DED5602D5092CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		C779889A4D1D361ADB0DFEC0 /* Build configuration list for PBXProject "ReMonitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				342C2353034DCEDE05D052B2 /* Debug */,
 				E41036B4309605494078BB6C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		C97E93A8212258D049264FF3 /* Build configuration list for PBXNativeTarget "ReMonitor" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E1571473ADB5D0671EC225FE /* Debug */,
-				4124D2BF7D35358AC94AB85B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -680,25 +850,45 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1E527C95D0BD17266DFBD01F /* MirrorDiffKit */ = {
+		25051BFB3D904497C95FC7BE /* MirrorDiffKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6CFBA5FAE1ED2A6261FB19A3 /* XCRemoteSwiftPackageReference "MirrorDiffKit" */;
 			productName = MirrorDiffKit;
 		};
-		89F6803829C905B21090E2EE /* SwiftPrettyPrint */ = {
+		3F2566FCC95BE3A6F4791F64 /* HighlightedTextEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6833B374833EEEFE07A9AA87 /* XCRemoteSwiftPackageReference "HighlightedTextEditor" */;
+			productName = HighlightedTextEditor;
+		};
+		6334F10AE5C150000F8B0392 /* MirrorDiffKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CFBA5FAE1ED2A6261FB19A3 /* XCRemoteSwiftPackageReference "MirrorDiffKit" */;
+			productName = MirrorDiffKit;
+		};
+		8B2C82B9C090A943E7C14C58 /* SwiftPrettyPrint */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A8DCE366ABF20D5A43C3855F /* XCRemoteSwiftPackageReference "SwiftPrettyPrint" */;
 			productName = SwiftPrettyPrint;
 		};
-		AB2121F5C6CD72FA9FABCF86 /* ReSwift */ = {
+		95D4E710440BAB2E1961EDBF /* ReSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1FCA01DFA9894B2883B3C022 /* XCRemoteSwiftPackageReference "ReSwift" */;
 			productName = ReSwift;
 		};
-		B97E1CF74FE718912881BFCF /* HighlightedTextEditor */ = {
+		9CD4300CDE8FA5C3D6F199C1 /* ReSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FCA01DFA9894B2883B3C022 /* XCRemoteSwiftPackageReference "ReSwift" */;
+			productName = ReSwift;
+		};
+		AC7D362E5203E934CC5F3992 /* HighlightedTextEditor */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6833B374833EEEFE07A9AA87 /* XCRemoteSwiftPackageReference "HighlightedTextEditor" */;
 			productName = HighlightedTextEditor;
+		};
+		C61CFA02F5619267CF83C6EA /* SwiftPrettyPrint */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8DCE366ABF20D5A43C3855F /* XCRemoteSwiftPackageReference "SwiftPrettyPrint" */;
+			productName = SwiftPrettyPrint;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

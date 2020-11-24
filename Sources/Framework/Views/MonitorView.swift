@@ -8,9 +8,14 @@
 import ReSwift
 import SwiftUI
 
-struct MonitorView: View {
-    @Binding var records: [ReMonitorRecord]
-    var body: some View {
+public struct MonitorView: View {
+    @Binding public var records: [ReMonitorRecord]
+
+    public init(records: Binding<[ReMonitorRecord]>) {
+        _records = records
+    }
+
+    public var body: some View {
         NavigationView {
             List(records) { record in
                 NavigationLink(

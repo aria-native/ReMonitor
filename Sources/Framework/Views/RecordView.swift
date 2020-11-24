@@ -20,11 +20,14 @@ struct RecordView: View {
 
     var body: some View {
         Form {
-            Section(header: Text("Action").foregroundColor(.secondary)) {
-                Text(record.action.description)
+            Section {
                 Text(dateFormatter.string(from: record.date))
             }
-            Spacer().frame(height: 20)
+            Spacer().frame(height: 10)
+            Section(header: Text("Action").foregroundColor(.secondary)) {
+                Text(record.action.description)
+            }
+            Spacer().frame(height: 10)
             Section(header: Text("State").foregroundColor(.secondary)) {
                 Picker("", selection: self.$selectedIndex) {
                     Text("diff").tag(0)

@@ -13,6 +13,14 @@ let addedLine = try! NSRegularExpression(pattern: "^ *\\+.*$", options: [.anchor
 let removedLine = try! NSRegularExpression(pattern: "^ *-.*$", options: [.anchorsMatchLines])
 // swiftlint:enable force_try
 
+#if os(macOS)
+    typealias UXColor = NSColor
+    typealias UXFont = NSFont
+#else
+    typealias UXColor = UIColor
+    typealias UXFont = UIFont
+#endif
+
 extension Array where Element: Equatable {
     var uniques: Array {
         var buffer = Array()
@@ -64,10 +72,10 @@ struct DiffView: View {
 
     private let rules: [HighlightRule] = [
         HighlightRule(pattern: addedLine, formattingRules: [
-            TextFormattingRule(key: .foregroundColor, value: NSColor.systemGreen),
+            TextFormattingRule(key: .foregroundColor, value: UXColor.systemGreen),
         ]),
         HighlightRule(pattern: removedLine, formattingRules: [
-            TextFormattingRule(key: .foregroundColor, value: NSColor.systemRed),
+            TextFormattingRule(key: .foregroundColor, value: UXColor.systemRed),
         ]),
     ]
 
@@ -75,7 +83,7 @@ struct DiffView: View {
         HighlightedTextEditor(
             text: diff,
             highlightRules: rules
-        ).defaultFont(NSFont.monospacedSystemFont(ofSize: 0.0, weight: .regular))
+        ).defaultFont(UXFont.monospacedSystemFont(ofSize: 0.0, weight: .regular))
     }
 }
 
